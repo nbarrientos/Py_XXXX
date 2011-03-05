@@ -1,14 +1,6 @@
 #!/usr/bin/env python2.7
 __VERSION__ = "0.1"
 
-# Py_XXXX
-# JAZZTEL_XXXX y WLAN_XXXX key generator (Python version)
-# Based on neikokz's PHP (all credit is his/her)
-# Check out http://kz.ath.cx/wlan/ for additional copyleft details.
-# Coded by Nacho Barrientos <nacho@criptonita.com> (bugs are welcome)
-# Released in the Public Domain
-# FOR EDUCATIONAL USE ONLY.
-
 import sys
 if not sys.version_info[0:2] == (2,7):
     print >> sys.stderr, "Python 2.7 or higher required. Exiting."
