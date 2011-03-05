@@ -53,7 +53,7 @@ def calculate_zyxel(essid, bssid):
     md5_calc = hashlib.md5()
     md5_calc.update(bssid.lower()[0:8])
     md5_calc.update(essid.lower())
-    return md5_calc.hexdigest()[0:20]
+    return md5_calc.hexdigest()[0:20].upper()
 
 _CALL_MAPPINGS = {'comtrend__ct-5365': calculate_comtrend, 
                   'zyxel__p660hw': calculate_zyxel}
