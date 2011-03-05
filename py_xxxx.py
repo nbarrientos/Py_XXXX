@@ -1,5 +1,5 @@
 #!/usr/bin/env python2.7
-__VERSION__ = "0.1"
+__VERSION__ = "0.2_DEV"
 
 import sys
 if sys.version_info[0:2] < (2,7):
@@ -20,7 +20,7 @@ def mac_validator(raw):
     return mac.upper()
 
 def known_essid_validator(raw):
-    match = re.match("(JAZZTEL|WLAN)_([\dA-F]{4})$", raw, re.IGNORECASE)
+    match = re.match(r"(JAZZTEL|WLAN)_([\dA-F]{4})$", raw, re.IGNORECASE)
     if not match:
         raise argparse.ArgumentTypeError("%s is not a known network name (e.g. WLAN_DEAD)" % raw)
     return match.group(2).upper()
