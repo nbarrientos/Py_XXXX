@@ -2,7 +2,7 @@
 __VERSION__ = "0.1"
 
 import sys
-if not sys.version_info[0:2] == (2,7):
+if sys.version_info[0:2] < (2,7):
     print >> sys.stderr, "Python 2.7 or higher required. Exiting."
     sys.exit(-2)
 
