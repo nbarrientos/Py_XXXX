@@ -23,7 +23,7 @@ def known_essid_validator(raw):
     match = re.match("(JAZZTEL|WLAN)_([\dA-F]{4})$", raw, re.IGNORECASE)
     if not match:
         raise argparse.ArgumentTypeError("%s is not a known network name (e.g. WLAN_DEAD)" % raw)
-    return match.group(2)
+    return match.group(2).upper()
 
 def parse_args():
     parser = argparse.ArgumentParser(
