@@ -6,6 +6,15 @@ Hardware currently supported:
 Based on neikokz's PHP (all credit is his/her)
 Check out http://kz.ath.cx/wlan/ for additional copyleft details.
 
-Coded by Nacho Barrientos <nacho@criptonita.com> (bugs are welcome)
-Released in the Public Domain
+Coded by Nacho Barrientos <nacho@criptonita.com>
+
+Disclaimer: I've just recoded the algorithm in Python. Couldn't test
+it as I was unable to reach an exploitable wireless network in the nearby.
+However, it spits out the same results as the original implementation.
+Please, let me know if something is wrong.
+
+Requires Python 2.7 or higher.
+
+Released in the Public Domain.
+
 FOR EDUCATIONAL USE ONLY.
