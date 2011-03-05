@@ -1,4 +1,4 @@
-Py_XXXX is a JAZZTEL_XXXX y WLAN_XXXX key generator (Python version)
+Py_XXXX is a JAZZTEL_XXXX and WLAN_XXXX default key generator written in Python
 Hardware currently supported:
  * Comtrend CT-5365 (Jazztel and Telefónica)
  * ZyXEL P660HW (Telefónica) 
